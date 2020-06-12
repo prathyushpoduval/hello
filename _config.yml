@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Prathyush Poduval"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Physics Junior at the Indian Institute of Science, Bangalore who's interested in Condensed Matter Theory"
+  bio    : "Physics Junior at the Indian Institute of Science, Bangalore with interests in Condensed Matter Theory"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
