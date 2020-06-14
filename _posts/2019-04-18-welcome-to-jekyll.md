@@ -45,7 +45,7 @@ $$\begin{aligned}
     S&=\int d\tau \left(\sum_{k\sigma} \bar{\psi}_{k\sigma} (\partial_{\tau} + \epsilon_k-\mu)\psi_{k\sigma}-\sum_i\sigma_i\cdot \vec{M_i} +\sum_i \frac{\vec{M_i}^2}{2U}  \right)\end{aligned}$$
     
 Now, we shift to Matsubara - Fourier space. This procedure is a bit
-delicate because $\sigma\cdot \vec{M} = (\sigma_r)_{\alpha\beta} M_{r} c^{\dagger}_{\alpha}c_{\beta}$ (Sum over repeated indices). As a result we can't directly take the Fourier transform of $\sigma$ which is why we did the Hubbard Stratanovich in spatial coordinates. Now, doing the Fourier transform gives
+delicate because $\sigma\cdot \vec{M} = (\sigma_r)_{\alpha\beta}$$ M_{r} c^{\dagger}_{\alpha}c_{\beta}$ (Sum over repeated indices). As a result we can't directly take the Fourier transform of $\sigma$ which is why we did the Hubbard Stratanovich in spatial coordinates. Now, doing the Fourier transform gives
 
 $$\begin{aligned}
     S&=\left(\sum_{kk'\alpha\beta nn'} \bar{\psi}_{k\alpha}(i\omega_n) \left((-i\omega_n + \epsilon_k-\mu)\delta_{kk'}\delta_{nn'} \delta_{\alpha\beta} - \sigma_{\alpha\beta}\cdot\vec{M}_{k-k',n-n'}\right)\psi_{k'\beta}(i\omega_{n'}) \right)  +\beta N\sum_{kn}\frac{M_{k,n}^2}{2U}\end{aligned}$$
