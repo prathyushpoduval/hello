@@ -24,6 +24,12 @@ $link-color: black;
 
 }
 
+a:focus, button:focus {
+    outline: thin dotted #000;
+    outline: 5px auto #000;
+    outline-offset: -2px;
+}
+
 .greedy-nav__toggle:hover .navicon, .greedy-nav__toggle:hover .navicon:before, .greedy-nav__toggle:hover .navicon:after{
   color: #000;
 }
