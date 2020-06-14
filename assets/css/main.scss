@@ -7,6 +7,10 @@
 
 $link-color: black;
 
+
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
 .greedy-nav .visible-links a:before {
   background: #000;
 }
@@ -26,6 +30,3 @@ $link-color: black;
 .pagination li a.current, .pagination li a.current.disabled{
   background: #000;
 }
-
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
