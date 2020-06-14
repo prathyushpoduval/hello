@@ -39,6 +39,29 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ```
 
+
+#Setting The Stage#
+
+We'll be hunting the Hubbard model to search for Ferromagnetic (FM) and Antiferromagnetic (AFM) phases. The Hubbard hamiltonian is given by 
+$$H=-t\sum_{\langle ij\rangle}(\cd{i}\cc{j}+\cd{j}\cc{i}) -\mu \sum_{i\sigma} n_{i\sigma} +U \sum_i n_{i\uparrow}n_{i\downarrow}  $$
+The first step is to write the interaction term in terms of the Pauli matrices. The Pauli matrices differ from the spin matrices by a factor of $2$. We evaluate
+$$
+\begin{align*}
+\hat{\sigma}^2 &= \hat{\sigma_x}^2+\hat{\sigma_y}^2+\hat{\sigma_z}^2\\
+&=(\cdU{i}\cD{i}+\cdD{i}\cU{i})^2 +i^2(\cdD{i}\cU{i}-\cdU{i}\cD{i})^2+(\cdU{i}\cU{i}-\cdD{i}\cD{i})^2\\
+&=n_{i\uparrow}+n_{i\downarrow} - 2n_{i\uparrow}n_{i\downarrow}+2n_{i\uparrow}(1-n_{i\downarrow})+2n_{i\downarrow}(1-n_{i\uparrow}) \\
+&=3(n_{i\uparrow}+n_{i\downarrow}) - 6n_{i\uparrow}n_{i\downarrow}
+\end{align*}
+$$
+Thus, we get that $n_{i\uparrow}n_{i\downarrow}= -\frac{(\hat{\sigma}_i)^2}{6} + \frac{1}{2}(n_{i\uparrow}+n_{i\downarrow})$ which gives us 
+$$
+\begin{align*}
+ H &=-t\sum_{\langle ij\rangle}(\cd{i}\cc{j}+\cd{j}\cc{i}) -\mu \sum_{i\sigma} n_{i\sigma} + \sum_i -\frac{U}{6}(\hat{\sigma}_i)^2+ \sum_i\frac{U}{2}(n_{i\uparrow}+n_{i\downarrow})\\
+&=-t\sum_{\langle ij\rangle}(\cd{i}\cc{j}+\cd{j}\cc{i}) -\mu' \sum_{i\sigma} n_{i\sigma} + \sum_i -\frac{U}{6}(\hat{\sigma}_i)^2 \\
+&= \sum_{\sigma}(\epsilon_k-\mu)\cd{k}\cc{k}-\sum_i \frac{U}{6}(\hat{\sigma}_i)^2
+\end{align*}
+$$
+
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
