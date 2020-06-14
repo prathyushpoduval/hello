@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   A repository of information collected by the Author.
 twitter_username: username
 github_username: prathyushpoduval
-minimal_mistakes_skin: dirt
+minimal_mistakes_skin: contrast
 search: true
 
 # Build settings
