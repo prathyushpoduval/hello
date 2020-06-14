@@ -187,9 +187,9 @@ $\vec{M}(q)=\vec{M_0}+ \vec{\eta}(q)$ where $\vec{M}\_0$ is the MF
 solution and $\vec{\eta}(q)$ are the fluctuations. Suppose this modifies
 the inverse green's function to
 
-$$-G^{-1}' = -G^{-1} -\mathcal{K}_x\eta_x(q)-\mathcal{K}_y\eta_y(q)$$
+$$\begin{aligned}-G^{-1}' = -G^{-1} -\mathcal{K}_x\eta_x(q)-\mathcal{K}_y\eta_y(q)\end{aligned}$$
 
-where $-G^{-1}'$ is the total inverse green's functions, $-G^{-1}$ is
+where $-G^{-1}$ is the total inverse green's functions, $-G^{-1}$ is
 the mean field inverse green's function and $\mathcal{K}\_i$ is the
 fluctuation in the inverse green's function in the $i$ direction. As a
 result, the change in the action is given by (Ignoring all first order
@@ -198,7 +198,7 @@ contributions which add upto $0$)
 $$\begin{aligned}
     S&= -\text{Tr}\ln\left(-G^{-1}'\right) + \beta N\sum_q\frac{\vec{M}^2(q)}{2U}\\
     &=  -\text{Tr}\ln\left(-G^{-1} -\mathcal{K}_x\eta_x(q)-\mathcal{K}_y\eta_y(q)\right) + \beta N\sum_q\frac{(\vec{M_0}+ \vec{\eta}(q))^2}{2U}\\
-    &=  -\text{Tr}\ln\left(-G^{-1}\left(\mathds{1} +G\mathcal{K}_x\eta_x+G\mathcal{K}_y\eta_y\right)\right) + \beta N\frac{\vec{M_0}^2}{2U} +\beta N\sum_{q,r}\frac{\vec{\eta}_r(-q)\vec{\eta}_r(q)}{2U}\\
+    &=  -\text{Tr}\ln\left(-G^{-1}\left(\mathbb{1} +G\mathcal{K}_x\eta_x+G\mathcal{K}_y\eta_y\right)\right) + \beta N\frac{\vec{M_0}^2}{2U} +\beta N\sum_{q,r}\frac{\vec{\eta}_r(-q)\vec{\eta}_r(q)}{2U}\\
     &=  S_0 + \frac{1}{2}\sum_{q,a,b}\vec{\eta}_a(-q)\vec{\eta}_b(q) \left( \frac{\delta_{ab}}{U} + \text{Tr}G\mathcal{K}_aG\mathcal{K}_b \right) \end{aligned}$$
 Thus, the coupling is given by $\frac{\delta_{ab}}{U} -\chi_{ab}(q)$
 where $\chi_{ab}(q) =- \text{Tr }G\mathcal{K}_aG\mathcal{K}_b$. The
@@ -257,23 +257,24 @@ given by
 
 $$\begin{aligned}
     G^{-1}=\begin{pmatrix}
-    G_0^{-1}(q,i\omega_n) \mathds{1}_{2\times 2} & \sigma_z M \\
-     \sigma_z M & G_0^{-1}(q+K,i\omega_n)  \mathds{1}_{2\times 2}
-    \end{pmatrix} = \begin{pmatrix}
-    (i\omega_n-\epsilon_k+\mu) \mathds{1}_{2\times 2} & \sigma_z M \\
-     \sigma_z M & (i\omega_n+\epsilon_k+\mu) \mathds{1}_{2\times 2}
+    G_0^{-1}(q,i\omega_n) \mathbb{1}_{2\times 2} & \sigma_z M \\
+     \sigma_z M & G_0^{-1}(q+K,i\omega_n)  \mathbb{1}_{2\times 2}
+    \end{pmatrix}\\
+    &= \begin{pmatrix}
+    (i\omega_n-\epsilon_k+\mu) \mathbb{1}_{2\times 2} & \sigma_z M \\
+     \sigma_z M & (i\omega_n+\epsilon_k+\mu) \mathbb{1}_{2\times 2}
     \end{pmatrix}\end{aligned}$$ 
     
 Inverting this block matrix gives us
 
 $$\begin{aligned}
     G&=\frac{1}{M^2-(i\omega_n+\epsilon_k+\mu)(i\omega_n-\epsilon_k+\mu)}\begin{pmatrix}
-    -(i\omega_n+\epsilon_k+\mu) \mathds{1}_{2\times 2}& \sigma_z M \\
-     \sigma_z M & -(i\omega_n-\epsilon_k+\mu) \mathds{1}_{2\times 2} 
+    -(i\omega_n+\epsilon_k+\mu) \mathbb{1}_{2\times 2}& \sigma_z M \\
+     \sigma_z M & -(i\omega_n-\epsilon_k+\mu) \mathbb{1}_{2\times 2} 
     \end{pmatrix}\\\\
     &=\frac{1}{(i\omega_n+\mu)^2-E_k^2}\begin{pmatrix}
-    (i\omega_n+\epsilon_k+\mu) \mathds{1}_{2\times 2}& -\sigma_z M \\
-     -\sigma_z M & (i\omega_n-\epsilon_k+\mu) \mathds{1}_{2\times 2} 
+    (i\omega_n+\epsilon_k+\mu) \mathbb{1}_{2\times 2}& -\sigma_z M \\
+     -\sigma_z M & (i\omega_n-\epsilon_k+\mu) \mathbb{1}_{2\times 2} 
     \end{pmatrix}\end{aligned}$$ 
     
 In the Antiferromagnetic case, we
@@ -299,7 +300,7 @@ $$\begin{aligned}
     &=-2\delta_{ab}\sum_{ik_n,k}\left( -2G_{12}^2 + G_{11}G_{22}' +G_{22}G_{11}'\right)\end{aligned}$$
     
 Thus, $\chi_{xy}=\chi_{yx}=0$ and $\chi_{xx}=\chi_{yy}$! Let
-$\chi{xx}=\chi$. The condition for the goldstone excitations are now
+$\chi_{xx}=\chi$. The condition for the goldstone excitations are now
 $1=U\chi$. We can evaluate $\chi$ to get 
 
 $$\begin{aligned}
@@ -317,15 +318,15 @@ also have the following Taylor expansions:
 
 $$\begin{aligned}
     \epsilon' &= \epsilon +\frac{k\cdot q}{m}+\frac{q^2}{2m}\\
-    &\diff\\
+    &\hphatom{}\\
     E'&=\sqrt{\epsilon'^2+M^2}\\
       &=\sqrt{E^2+\frac{2k\cdot q}{m}\epsilon +\frac{q^2}{m}\epsilon+\frac{(k\cdot q)^2}{m^2}}\\
       &=E\left(1+\frac{k\cdot q}{m}\frac{\epsilon}{E^2}+\frac{q^2}{2m}\frac{\epsilon}{E^2}+\frac{(k\cdot q)^2}{2m^2}\frac{1}{E^2} -\frac{(k\cdot q)^2}{2m^2}\frac{\epsilon^2}{E^4}\right)\\
       &=E\left(1+\frac{k\cdot q}{m}\frac{\epsilon}{E^2}+\frac{q^2}{2m}\frac{\epsilon}{E^2}+\frac{(k\cdot q)^2}{2m^2}\frac{M^2}{E^4} \right)\\
-       &\diff\\
+       &\hphatom{}\\
 \frac{EE'+M^2+\epsilon\epsilon'}{EE'}&\approx \frac{2E^2+\frac{k\cdot q}{m}\epsilon+\frac{q^2}{2m}\epsilon+\frac{(k\cdot q)^2}{2m^2}\frac{M^2}{E^2}+\frac{k\cdot q}{m}\epsilon+\frac{q^2}{2m}\epsilon}{E^2\left(1+\frac{k\cdot q}{m}\frac{\epsilon}{E^2}+\frac{q^2}{2m}\frac{\epsilon}{E^2}+\frac{(k\cdot q)^2}{2m^2}\frac{M^2}{E^4} \right)}\\
 &\approx\frac{1}{E^2}\left(2E^2-\frac{k\cdot q}{m}\epsilon- \frac{(k\cdot q)^2}{2m^2}\frac{M^2}{E^2}  \right)\\
- &\diff\\
+ &\hphatom{}\\
 \frac{1}{\omega +E+E'}-\frac{1}{\omega -E-E'}&\approx \frac{1}{E+E'}\left( \frac{1}{1+\frac{\omega}{2E}}+\frac{1}{1-\frac{\omega}{2E}}\right)\\
 &\approx \frac{1}{E}\left(1-\frac{k\cdot q}{2m}\frac{\epsilon}{E^2}-\frac{q^2}{4m}\frac{\epsilon}{E^2}-\frac{(k\cdot q)^2}{4m^2}\frac{M^2}{E^4}+\frac{(k\cdot q)^2}{4m^2}\frac{\epsilon^2}{E^4}\right)\left(1+\frac{\omega^2}{4E^2}\right)\\
 &\approx \frac{1}{E}\left( 1-\frac{k\cdot q}{2m}\frac{\epsilon}{E^2}-\frac{q^2}{4m}\frac{\epsilon}{E^2}-\frac{(k\cdot q)^2}{4m^2}\frac{M^2-\epsilon^2}{E^4}+\frac{\omega^2}{4E^2}\right)\end{aligned}$$
