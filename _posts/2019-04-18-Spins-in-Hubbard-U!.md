@@ -111,8 +111,8 @@ Anti-Ferromagnetism Here, the order parameter couples Fermions at $q$ with those
 $$\begin{aligned}
     S&=\sum_{q\in \frac{1}{2}BZ, n}\left(\bar{\psi}_{q\uparrow}\text{ }\bar{\psi}_{q\downarrow}\text{ }\bar{\psi}_{q+K\uparrow}\bar{\psi}_{q+K\downarrow}\right) 
     \begin{pmatrix}
-    -G_0^{-1}(q,i\omega_n) \mathds{1}_{2\times 2} & -\sigma_z M \\
-     -\sigma_z M & -G_0^{-1}(q+K,i\omega_n)  \mathds{1}_{2\times 2}
+    -G_0^{-1}(q,i\omega_n) \mathbb{1}_{2\times 2} & -\sigma_z M \\
+     -\sigma_z M & -G_0^{-1}(q+K,i\omega_n)  \mathbb{1}_{2\times 2}
     \end{pmatrix}
     \begin{pmatrix}\psi_{q\uparrow} \\ \psi_{q\downarrow}\\\psi_{q+K\uparrow}\\\psi_{q+K\downarrow}\end{pmatrix} +\beta N\frac{M^2}{U}\\
     & = \sum_{q\in \frac{1}{2}BZ, n} \vec{\bar{\psi}} \left(-G^{-1}\right) \vec{\psi} + \beta N\frac{M^2}{U}\end{aligned}$$
@@ -125,7 +125,7 @@ $$\begin{aligned}
 Using the formula for the determinant of a block matrix, we find that
 
 $$\begin{aligned}
-    \ln\det\left(-G^{-1}\right)&= \sum_{q\in \frac{1}{2}BZ, n} \ln\det\left( G_0^{-1}(q)G_0^{-1}(q+K) - M^2\sigma_z^2\right)\mathds{1}_{2\times 2}\\
+    \ln\det\left(-G^{-1}\right)&= \sum_{q\in \frac{1}{2}BZ, n} \ln\det\left( G_0^{-1}(q)G_0^{-1}(q+K) - M^2\sigma_z^2\right)\mathbb{1}_{2\times 2}\\
     &=  \sum \ln\left( (i\omega_n+\mu)^2 -\epsilon_k^2 - M^2\right)^2\\
     &= 2\sum\left(\ln\left( -i\omega_n+E_k-\mu\right) +\ln\left( -i\omega_n-E_k-\mu\right)\right)\\
     &= 2\sum_{q\in\frac{1}{2}BZ}\left(\ln\left( e^{-\beta(E_k-\mu)} +1\right) + \ln\left( e^{-\beta(-E_k-\mu)} +1\right) \right)\end{aligned}$$
@@ -146,7 +146,7 @@ Where we've used the fact that summing over half the BZ (In this
 context) is the same as integrating over half the density of states.
 Looking at the roots of the inverse green's function, we find that the
 energy spectrum is given by $E_k=\pm\sqrt{\epsilon_k^2+M^2}$. As a
-result, the Antiferromagnetic phase is **gapped**. Because $\M\to 0$
+result, the Antiferromagnetic phase is **gapped**. Because $M\to 0$
 near the phase boundary, the AFM-Paramagnet transition is a **second
 order** transition.
 
