@@ -104,7 +104,7 @@ $$\begin{aligned}
     &= \int d\epsilon \rho(\epsilon) (-\frac{df}{d\epsilon}(\epsilon -\mu))(2M)\\
     &= 2M\rho(\mu)\end{aligned}$$ 
     
-Thus, the equation for the zero temperature phase diagram is given by $2U\rho(\mu)=1$. Looking at the roots of the inverse green's function, we find that the energy spectrum is given by $\epsilon_k \pm M$. As a result, the Ferromagnetic phase is **gapless**. Because $\M\to 0$ near the phase boundary, the FM-Paramagnet transition is a **second order** transition.
+Thus, the equation for the zero temperature phase diagram is given by $2U\rho(\mu)=1$. Looking at the roots of the inverse green's function, we find that the energy spectrum is given by $\epsilon_k \pm M$. As a result, the Ferromagnetic phase is **gapless**. Because $M\to 0$ near the phase boundary, the FM-Paramagnet transition is a **second order** transition.
 
 Anti-Ferromagnetism Here, the order parameter couples Fermions at $q$ with those at $q+K$ ($K=(\pi,\pi,\pi)$). Now,$q+K+K=q$ as it goes across the Bruoilloin zone. As a result, we can write our action as
 
@@ -178,4 +178,190 @@ mean field equations, I found that both FM and AFM cannot coexist. This
 would lead to the conclusion that the FM-AFM transition is a **first
 order** transition.
 
+# Fluctuations 
+The aim behind modelling fluctuations is to search for low
+energy excitation. These are primarily caused by the Goldstone modes.
+These fluctuations of $\vec{M}\_0$ are primarily in the $x$ and $y$
+direction. Thus, the HS fiels is of the form 
+$\vec{M}(q)=\vec{M_0}+ \vec{\eta}(q)$ where $\vec{M}\_0$ is the MF
+solution and $\vec{\eta}(q)$ are the fluctuations. Suppose this modifies
+the inverse green's function to
 
+$$-G^{-1}' = -G^{-1} -\mathcal{K}_x\eta_x(q)-\mathcal{K}_y\eta_y(q)$$
+
+where $-G^{-1}'$ is the total inverse green's functions, $-G^{-1}$ is
+the mean field inverse green's function and $\mathcal{K}\_i$ is the
+fluctuation in the inverse green's function in the $i$ direction. As a
+result, the change in the action is given by (Ignoring all first order
+contributions which add upto $0$) 
+
+$$\begin{aligned}
+    S&= -\text{Tr}\ln\left(-G^{-1}'\right) + \beta N\sum_q\frac{\vec{M}^2(q)}{2U}\\
+    &=  -\text{Tr}\ln\left(-G^{-1} -\mathcal{K}_x\eta_x(q)-\mathcal{K}_y\eta_y(q)\right) + \beta N\sum_q\frac{(\vec{M_0}+ \vec{\eta}(q))^2}{2U}\\
+    &=  -\text{Tr}\ln\left(-G^{-1}\left(\mathds{1} +G\mathcal{K}_x\eta_x+G\mathcal{K}_y\eta_y\right)\right) + \beta N\frac{\vec{M_0}^2}{2U} +\beta N\sum_{q,r}\frac{\vec{\eta}_r(-q)\vec{\eta}_r(q)}{2U}\\
+    &=  S_0 + \frac{1}{2}\sum_{q,a,b}\vec{\eta}_a(-q)\vec{\eta}_b(q) \left( \frac{\delta_{ab}}{U} + \text{Tr}G\mathcal{K}_aG\mathcal{K}_b \right) \end{aligned}$$
+Thus, the coupling is given by $\frac{\delta_{ab}}{U} -\chi_{ab}(q)$
+where $\chi_{ab}(q) =- \text{Tr }G\mathcal{K}_aG\mathcal{K}_b$. The
+goldstone excitations are given by the roots of the determinant of the
+coupling which gives the equation $$\begin{aligned}
+    \left(\frac{1}{U}-\chi_{xx}(q)\right)\left(\frac{1}{U}-\chi_{yy}(q)\right) - \chi_{xy}(q)\chi_{yx}(q) = 0\end{aligned}$$
+    
+Now, we evaluate this for the FM and AFM cases.
+
+# Ferromagnetic Fluctuations 
+For this case, we have that
+$\kappa_a= \sigma_a$. Thus, we can now evaluate $\chi_{ab}$.
+
+$$\begin{aligned}
+    \chi_{ab}&= -\text{Tr}G\mathcal{K}_aG\mathcal{K}_b\\
+    &=-\sum_{ik_n,k}\text{Tr }\begin{pmatrix}G_{11}(k)& 0\\0& G_{22}(k)\end{pmatrix}\begin{pmatrix}0& a\\a^*& 0\end{pmatrix}\begin{pmatrix}G_{11}(k+q)& 0\\0& G_{22}(k+q)\end{pmatrix}\begin{pmatrix}0& b\\b^*& 0\end{pmatrix}\\
+    &= -\sum_{ik_n,k}\text{Tr }\begin{pmatrix}0 & aG_{11}(k)\\a^*G_{22}(k)& 0\end{pmatrix}\begin{pmatrix}0& bG_{11}(k+q)\\b^*G_{22}(k+q) & 0\end{pmatrix}\\
+    &= -\sum_{ik_n,k}\left( ab^*G_{11}(k)G_{22}(k+q) +a^*bG_{22}(k)G_{11}(k+q)\right)\end{aligned}$$
+    
+This tells us that
+$\chi_{xx}=\chi_{yy} = -\sum_{ik_n,k}\left( G_{11}(k)G_{22}(k+q) +G_{22}(k)G_{11}(k+q)\right)$
+and
+$\chi_{yx}\chi_{xy}=\left(\sum_{ik_n,k}\left( G_{11}(k)G_{22}(k+q) -G_{22}(k)G_{11}(k+q)\right)\right)^2 = \chi^2$.
+Thus, substituting it into the equation for the excitation modes, we get
+that 
+
+$$\begin{aligned}
+    0&= \left(\frac{1}{U}-\chi_{xx}(q)\right)^2 - \chi(q)^2\\
+    \Longrightarrow\frac{1}{U} &= \chi_{xx}(q) - \chi(q)\\
+                &= -2\sum_{ik_n,k}G_{11}(k)G_{22}(k+q)\\
+                &=-2\sum_k\sum_{ik_n}\frac{1}{(-ik_n+\epsilon_k-\mu -M)(-ik_n-iq_n+\epsilon_{k+q}-\mu +M)}\\
+                &=-2\sum_k\frac{f_{k\uparrow}-f_{k+q\downarrow}}{-iq_n+\epsilon_k - \epsilon_{k+q} -2M}\end{aligned}$$
+                
+Analytically continuing $iq_n \to \omega +0^+$, and approximating upto
+second order in $q$ while also taking into consideration the mean field
+equations we get 
+
+$$\begin{aligned}
+    1&=-2U\sum_k\frac{f_{k\uparrow}-f_{k+q\downarrow}}{-\omega+\epsilon_k - \epsilon_{k+q} -2M}\\
+    &=-2U\sum_k\frac{f_{k\uparrow}-f_{k+q\downarrow}}{\left(\epsilon_k - \epsilon_{k+q} -2M\right)\left(1-\frac{\omega}{\epsilon_k - \epsilon_{k+q} -2M}\right)}\\
+    &=-2U\sum_k\frac{f_{k\uparrow}-f_{k+q\downarrow}}{\left(\epsilon_k - \epsilon_{k+q} -2M\right)}\left(1+\frac{\omega}{\epsilon_k - \epsilon_{k+q} -2M}\right)\\
+    &\approx -2U\sum_k\frac{f_{k\uparrow}-f_{k+q\downarrow}}{-2M\left(1 -\frac{\epsilon_k - \epsilon_{k+q}}{2M}\right)}-2U\omega\sum_k\frac{f_{k\uparrow}-f_{k\downarrow}}{(2M)^2}\\
+    &\approx 2U\sum_k\frac{f_{k\uparrow}-f_{k\downarrow}}{2M} \left( 1+\frac{\epsilon_k - \epsilon_{k+q}}{2M}-\left(\frac{\epsilon_k - \epsilon_{k+q}}{2M}\right)^2\right)-\frac{\omega}{2M}\\
+    &=1+2U\sum_k \frac{f_{k\uparrow}-f_{k\downarrow}}{2M^2}(-\frac{k\cdot q}{m} -\frac{q^2}{2m})- 2U\sum_k \frac{f_{k\uparrow}-f_{k\downarrow}}{8M^3}(k\cdot q)^2 -\frac{\omega}{2M}\\
+    &= 1+q^2\alpha -\frac{\omega}{2M}\\
+    \Longrightarrow& \omega \sim q^2\end{aligned}$$ 
+    
+Thus the spectrum of the low energy goldstone modes goes as $\omega \sim q^2$. Here, we also
+made the approximation that
+$f_{k\uparrow}-f_{k+q\downarrow}\approx f_{k\uparrow}-f_{k\downarrow}$
+because of the gap between up spin and down spin energy, the difference
+of $q$ doesn't matter. The condition for stability is given by
+$\alpha>0$ and the FM phase is destroyed along the line of $\alpha=0$.
+Antiferromagnetic Fluctuation Here, the inverse green's function is
+given by 
+
+$$\begin{aligned}
+    G^{-1}=\begin{pmatrix}
+    G_0^{-1}(q,i\omega_n) \mathds{1}_{2\times 2} & \sigma_z M \\
+     \sigma_z M & G_0^{-1}(q+K,i\omega_n)  \mathds{1}_{2\times 2}
+    \end{pmatrix} = \begin{pmatrix}
+    (i\omega_n-\epsilon_k+\mu) \mathds{1}_{2\times 2} & \sigma_z M \\
+     \sigma_z M & (i\omega_n+\epsilon_k+\mu) \mathds{1}_{2\times 2}
+    \end{pmatrix}\end{aligned}$$ 
+    
+Inverting this block matrix gives us
+
+$$\begin{aligned}
+    G&=\frac{1}{M^2-(i\omega_n+\epsilon_k+\mu)(i\omega_n-\epsilon_k+\mu)}\begin{pmatrix}
+    -(i\omega_n+\epsilon_k+\mu) \mathds{1}_{2\times 2}& \sigma_z M \\
+     \sigma_z M & -(i\omega_n-\epsilon_k+\mu) \mathds{1}_{2\times 2} 
+    \end{pmatrix}\\\\
+    &=\frac{1}{(i\omega_n+\mu)^2-E_k^2}\begin{pmatrix}
+    (i\omega_n+\epsilon_k+\mu) \mathds{1}_{2\times 2}& -\sigma_z M \\
+     -\sigma_z M & (i\omega_n-\epsilon_k+\mu) \mathds{1}_{2\times 2} 
+    \end{pmatrix}\end{aligned}$$ 
+    
+In the Antiferromagnetic case, we
+assume that the fluctuations are also of the antiperiodic type -
+neighbouring fluctuations are in the opposite direction. As a result,
+the fluctuations would be a perturbation along the antiferromagnetic
+mean field solution $\vec{M}$. Thus, we get that 
+
+$$\begin{aligned}
+    \mathcal{K}_a = \begin{pmatrix}0 &\sigma_a \\ \sigma_a &0  \end{pmatrix}\end{aligned}$$
+    
+Thus, we can now evaluate $\chi_{ab}$. Note that we denote functons of
+$k+q$ with a dash (That is, $G(k)\to G$ and $G(k+q)\to G'$). Also, note
+that $\sigma_z\sigma_a=-\sigma_a\sigma_z$ for $a=x,y$ and $G_{12}$ is
+independent of $k$. 
+
+$$\begin{aligned}
+    \chi_{ab}&= -\text{Tr}G\mathcal{K}_aG\mathcal{K}_b\\
+    &=-\sum_{ik_n,k}\text{Tr }\begin{pmatrix}G_{11}(k)& G_{12}(k)\sigma_z\\G_{12}(k)\sigma_z& G_{22}(k)\end{pmatrix} \begin{pmatrix}0&\sigma_a \\ \sigma_a &0\end{pmatrix}\begin{pmatrix}G_{11}(k+q)& G_{12}(k+q)\sigma_z\\G_{12}(k+q)\sigma_z& G_{22}(k+q)\end{pmatrix}\begin{pmatrix}0 &\sigma_b \\ \sigma_b &0 \end{pmatrix}\\
+    &= -\sum_{ik_n,k}\text{Tr }\begin{pmatrix}  G_{12}\sigma_z\sigma_a &G_{11}\sigma_a  \\ G_{22}\sigma_a &G_{12}\sigma_z\sigma_a \end{pmatrix}
+    \begin{pmatrix} G_{12}\sigma_z\sigma_b & G_{11}'\sigma_b &\\ G_{22}'\sigma_b &G_{12}\sigma_z\sigma_b   \end{pmatrix}\\
+    &= -\sum_{ik_n,k}\left( -2G_{12}^2 + G_{11}G_{22}' +G_{22}G_{11}'\right)\text{Tr}\sigma_a\sigma_b\\
+    &=-2\delta_{ab}\sum_{ik_n,k}\left( -2G_{12}^2 + G_{11}G_{22}' +G_{22}G_{11}'\right)\end{aligned}$$
+    
+Thus, $\chi_{xy}=\chi_{yx}=0$ and $\chi_{xx}=\chi_{yy}$! Let
+$\chi{xx}=\chi$. The condition for the goldstone excitations are now
+$1=U\chi$. We can evaluate $\chi$ to get 
+
+$$\begin{aligned}
+     \chi&= -2\sum_{ik_n,k}\left( -2G_{12}^2 + G_{11}G_{22}' +G_{22}G_{11}'\right)\\
+ &= -2\sum_k \sum_{ik_n}\frac{ -2M^2+(ik_n+\epsilon+\mu)(ik_n+iq_n-\epsilon'+\mu)+(ik_n-\epsilon+\mu)(ik_n+iq_n+\epsilon'+\mu)}{((ik_n+\mu)^2-E^2)(ik_n+iq_n+\mu)^2-E'^2)}\\
+  &= -2\sum_k \sum_{p,p'=\pm1}\frac{EE'(f_p-f_{-p'}') +pp'M^2(f_p-f_{-p'}')+pp'\epsilon\epsilon'(f_p-f_{-p'}')}{2EE'(iq_n +pE+p'E')}\\
+  %&=-2\sum_k \sum_{p,p'=\pm1}\frac{\left(EE' -pp'M^2-pp'\epsilon\epsilon'\right)\left(f_p-f_{p'}'\right)}{2EE'(\omega +pE-p'E')}\\
+  &=-2\sum_k \frac{EE' +M^2+\epsilon\epsilon'}{2EE'}\left(\frac{1}{\omega +E+E'}-\frac{1}{\omega -E-E'}\right)(f_+-f_-')\end{aligned}$$
+  
+Where $f_{\pm} =f(\pm E_k-\mu)$. The matsubara sums were evaluated using
+Mathematica. In the last step, we analytically continued
+$iq_n\to \omega^+$ and ignored the terms with $p=-p'$. This is because
+in the limit $q\to 0$, we have $f_p-f_p'\approx 0$. For $q\to 0$, we
+also have the following Taylor expansions: 
+
+$$\begin{aligned}
+    \epsilon' &= \epsilon +\frac{k\cdot q}{m}+\frac{q^2}{2m}\\
+    &\diff\\
+    E'&=\sqrt{\epsilon'^2+M^2}\\
+      &=\sqrt{E^2+\frac{2k\cdot q}{m}\epsilon +\frac{q^2}{m}\epsilon+\frac{(k\cdot q)^2}{m^2}}\\
+      &=E\left(1+\frac{k\cdot q}{m}\frac{\epsilon}{E^2}+\frac{q^2}{2m}\frac{\epsilon}{E^2}+\frac{(k\cdot q)^2}{2m^2}\frac{1}{E^2} -\frac{(k\cdot q)^2}{2m^2}\frac{\epsilon^2}{E^4}\right)\\
+      &=E\left(1+\frac{k\cdot q}{m}\frac{\epsilon}{E^2}+\frac{q^2}{2m}\frac{\epsilon}{E^2}+\frac{(k\cdot q)^2}{2m^2}\frac{M^2}{E^4} \right)\\
+       &\diff\\
+\frac{EE'+M^2+\epsilon\epsilon'}{EE'}&\approx \frac{2E^2+\frac{k\cdot q}{m}\epsilon+\frac{q^2}{2m}\epsilon+\frac{(k\cdot q)^2}{2m^2}\frac{M^2}{E^2}+\frac{k\cdot q}{m}\epsilon+\frac{q^2}{2m}\epsilon}{E^2\left(1+\frac{k\cdot q}{m}\frac{\epsilon}{E^2}+\frac{q^2}{2m}\frac{\epsilon}{E^2}+\frac{(k\cdot q)^2}{2m^2}\frac{M^2}{E^4} \right)}\\
+&\approx\frac{1}{E^2}\left(2E^2-\frac{k\cdot q}{m}\epsilon- \frac{(k\cdot q)^2}{2m^2}\frac{M^2}{E^2}  \right)\\
+ &\diff\\
+\frac{1}{\omega +E+E'}-\frac{1}{\omega -E-E'}&\approx \frac{1}{E+E'}\left( \frac{1}{1+\frac{\omega}{2E}}+\frac{1}{1-\frac{\omega}{2E}}\right)\\
+&\approx \frac{1}{E}\left(1-\frac{k\cdot q}{2m}\frac{\epsilon}{E^2}-\frac{q^2}{4m}\frac{\epsilon}{E^2}-\frac{(k\cdot q)^2}{4m^2}\frac{M^2}{E^4}+\frac{(k\cdot q)^2}{4m^2}\frac{\epsilon^2}{E^4}\right)\left(1+\frac{\omega^2}{4E^2}\right)\\
+&\approx \frac{1}{E}\left( 1-\frac{k\cdot q}{2m}\frac{\epsilon}{E^2}-\frac{q^2}{4m}\frac{\epsilon}{E^2}-\frac{(k\cdot q)^2}{4m^2}\frac{M^2-\epsilon^2}{E^4}+\frac{\omega^2}{4E^2}\right)\end{aligned}$$
+
+Putting it all in, we can now calculate $\chi$ to get
+
+$$\begin{aligned}
+    \chi &= -2\sum_k \frac{EE' +M^2+\epsilon\epsilon'}{2EE'}\left(\frac{1}{\omega +E+E'}-\frac{1}{\omega -E-E'}\right)(f_+-f_-)\\
+    %&\approx -2\sum_k \frac{1}{2E^2}\left(2E^2- \frac{(k\cdot q)^2}{2m^2}\frac{M^2-\epsilon^2}{E^2}  \right)\frac{1}{E}\left(1+\frac{\omega^2}{4E^2}\right)(f_+-f_-)\\
+    &\approx-2\sum_k \frac{1}{E}(f_+-f_-) +\left(\sum_k\left( \frac{k^2\cos^2\theta}{4m^2}\frac{3M^2-3\epsilon^2}{E^5}\right)(f_--f_+)\right)|q|^2+\left(\sum_k\frac{1}{2E^3}(f_--f_+)\right)\omega^2\\
+    &= \frac{1}{U} -\frac{A}{U}|q|^2+\frac{B}{U}\omega^2\end{aligned}$$
+    
+In the last line, we used the MF solution
+$\frac{1}{U}=-2\sum_k \frac{1}{E}(f_+-f_-)$ and $\theta$ is the angle
+between $q$ and $k$. Moreover, all terms odd in $\epsilon$ and $k$ are
+$0$. Thus, the excitation spectrum is given by 
+
+$$\begin{aligned}
+    \chi U&=1\\
+    \Longrightarrow 1-A|q|^2+B\omega^2 &=1\\
+    \Longrightarrow \omega &\sim |q| \end{aligned}$$ 
+    
+Thus, the goldstone
+excitations go as $\omega \sim |k|$ which is what we expected for a
+Antiferromagnet. The condition for stability is $A>0$ and
+antiferromanetism is destroyed at $A=0$ to give ferromagnetism. As $U$
+increased, $M$ increases and as we can see $A$ will eventually become
+negative because $A\sim -\sum_k (M^2-\epsilon^2)$. Thus, at large $U$
+ferromagnetism takes over in a first order transition. For $\mu=0$,
+which is half filling, $A$ goes to zero at about
+$M\sim \frac{\epsilon_{max}}{2} \sim 3$ for $t=1$. Using the abundant
+data for $M-U-\mu$ I had generated, this corresponds to about
+$U\sim 28$. Changing $\mu$ away from half filing reduces the
+contribution of the integral at lower $\epsilon$ (Due to the factor of
+$f_+-f_-$) which makes $A$ more positive, and as a result
+$M_{transition}$ must decrease. Thus, we can draw an approximate phase
+diagram as done in figure $3$ below.
+
+\-
