@@ -7,5 +7,25 @@
 
 $link-color: black;
 
+.greedy-nav .visible-links a:before {
+  background: #000;
+}
+
+.search__toggle {
+  color: #000;
+}
+
+.navicon {
+  color: #000;
+
+}
+
+.greedy-nav__toggle:hover .navicon, .greedy-nav__toggle:hover .navicon:before, .greedy-nav__toggle:hover .navicon:after{
+  color: #000;
+}
+.pagination li a.current, .pagination li a.current.disabled{
+  background: #000;
+}
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
