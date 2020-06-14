@@ -4,7 +4,7 @@ date: 2019-04-18T15:34:30-04:00
 categories:
   - blog
 ---
-
+$$\require{ams}$$
 
 # Setting The Stage
 We'll be hunting the Hubbard model to search for Ferromagnetic (FM) and Antiferromagnetic (AFM) phases. The Hubbard hamiltonian is given by
