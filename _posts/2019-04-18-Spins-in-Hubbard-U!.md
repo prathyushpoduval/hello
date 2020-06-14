@@ -256,7 +256,7 @@ Antiferromagnetic Fluctuation Here, the inverse green's function is
 given by 
 
 $$\begin{aligned}
-    G^{-1}=\begin{pmatrix}
+    G^{-1}&=\begin{pmatrix}
     G_0^{-1}(q,i\omega_n) \mathbb{1}_{2\times 2} & \sigma_z M \\
      \sigma_z M & G_0^{-1}(q+K,i\omega_n)  \mathbb{1}_{2\times 2}
     \end{pmatrix}\\
