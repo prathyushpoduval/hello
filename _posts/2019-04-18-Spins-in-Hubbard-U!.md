@@ -74,7 +74,8 @@ For the mean field solution, we're looking for three main types of solutions, al
 The above three are the main types of solutions we'll be looking for. I've worked out the FM-AFM coexistence mean field equations. After
 running some numerical simulations, I've found that the mean field solutions have either $M_1=0$ or $M_0=0$, but both can't simultaneously be non-zero. The numerical solutions also support the fact that the FM-AFM transition (if it exists) is a **first order** phase transition. We will see that such a transition does indeed exist.
 
-Ferromagnetism The green's function for this simplified case is
+# Ferromagnetism 
+The green's function for this simplified case is
 
 $$\begin{aligned}
     -G^{-1}&=(-i\omega_n+\epsilon_k-\mu)I_2 -\sigma_zM\end{aligned}$$
@@ -106,7 +107,8 @@ $$\begin{aligned}
     
 Thus, the equation for the zero temperature phase diagram is given by $2U\rho(\mu)=1$. Looking at the roots of the inverse green's function, we find that the energy spectrum is given by $\epsilon_k \pm M$. As a result, the Ferromagnetic phase is **gapless**. Because $M\to 0$ near the phase boundary, the FM-Paramagnet transition is a **second order** transition.
 
-Anti-Ferromagnetism Here, the order parameter couples Fermions at $q$ with those at $q+K$ ($K=(\pi,\pi,\pi)$). Now,$q+K+K=q$ as it goes across the Bruoilloin zone. As a result, we can write our action as
+# Anti-Ferromagnetism 
+Here, the order parameter couples Fermions at $q$ with those at $q+K$ ($K=(\pi,\pi,\pi)$). Now,$q+K+K=q$ as it goes across the Bruoilloin zone. As a result, we can write our action as
 
 $$\begin{aligned}
     S&=\sum_{q\in \frac{1}{2}BZ, n}\left(\bar{\psi}_{q\uparrow}\text{ }\bar{\psi}_{q\downarrow}\text{ }\bar{\psi}_{q+K\uparrow}\bar{\psi}_{q+K\downarrow}\right) 
@@ -187,9 +189,9 @@ $\vec{M}(q)=\vec{M_0}+ \vec{\eta}(q)$ where $\vec{M}\_0$ is the MF
 solution and $\vec{\eta}(q)$ are the fluctuations. Suppose this modifies
 the inverse green's function to
 
-$$$\begin{aligned}-G^{-1}' = -G^{-1} -\mathcal{K}_x\eta_x(q)-\mathcal{K}_y\eta_y(q)\end{aligned}$$$
+$$\begin{aligned}-G^{-1}' = -G^{-1} -\mathcal{K}_x\eta_x(q)-\mathcal{K}_y\eta_y(q)\end{aligned}$$
 
-where $-G^{-1}'\$ is the total inverse green's functions, $-G^{-1}$ is
+where $-G^{-1}\apos$ is the total inverse green's functions, $-G^{-1}$ is
 the mean field inverse green's function and $\mathcal{K}\_i$ is the
 fluctuation in the inverse green's function in the $i$ direction. As a
 result, the change in the action is given by (Ignoring all first order
