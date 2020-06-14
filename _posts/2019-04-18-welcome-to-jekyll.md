@@ -41,7 +41,8 @@ We'll be hunting the Hubbard model to search for Ferromagnetic (FM) and Antiferr
 $$H=-t\sum_{\langle ij\rangle}(c^{\dagger}_{i\sigma}c_{j\sigma}+c^{\dagger}_{j\sigma}c_{i\sigma}) -\mu \sum_{i\sigma} n_{i\sigma} +U \sum_i n_{i\uparrow}n_{i\downarrow}$$
 The first step is to write the interaction term in terms of the Pauli
 matrices. The Pauli matrices differ from the spin matrices by a factor
-of $2$. We evaluate $$\begin{aligned}
+of $2$. We evaluate 
+$$\begin{aligned}
 \hat{\sigma}^2 &= \hat{\sigma_x}^2+\hat{\sigma_y}^2+\hat{\sigma_z}^2\\
 &=(c^{\dagger}_{i\downarrow}c_{i\uparrow}+c^{\dagger}_{i\uparrow}c_{i\downarrow})^2 +i^2(c^{\dagger}_{i\uparrow}c_{i\downarrow}-c^{\dagger}_{i\downarrow}c_{i\uparrow})^2+(c^{\dagger}_{i\downarrow}c_{i\downarrow}-c^{\dagger}_{i\uparrow}c_{i\uparrow})^2\\
 &=n_{i\uparrow}+n_{i\downarrow} - 2n_{i\uparrow}n_{i\downarrow}+2n_{i\uparrow}(1-n_{i\downarrow})+2n_{i\downarrow}(1-n_{i\uparrow}) \\
