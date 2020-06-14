@@ -52,7 +52,7 @@ of $2$. We evaluate $$\begin{aligned}
 &=n_{i\uparrow}+n_{i\downarrow} - 2n_{i\uparrow}n_{i\downarrow}+2n_{i\uparrow}(1-n_{i\downarrow})+2n_{i\downarrow}(1-n_{i\uparrow}) \\
 &=3(n_{i\uparrow}+n_{i\downarrow}) - 6n_{i\uparrow}n_{i\downarrow}\end{aligned}$$
 Thus, we get that
-$n_{i\uparrow}n_{i\downarrow}= -\frac{(\hat{\sigma}_i)^2}{6} + \frac{1}{2}(n_{i\uparrow}+n_{i\downarrow})$
+$n_{i\uparrow}n_{i\downarrow}= -\frac{(\hat{\sigma}\_i)^2}{6} + \frac{1}{2}(n_{i\uparrow}+n_{i\downarrow})$
 which gives us $$\begin{aligned}
  H &=-t\sum_{\langle ij\rangle}(c^{\dagger}_{i\sigma}c_{j\sigma}+c^{\dagger}_{j\sigma}c_{i\sigma}) -\mu \sum_{i\sigma} n_{i\sigma} + \sum_i -\frac{U}{6}(\hat{\sigma}_i)^2+ \sum_i\frac{U}{2}(n_{i\uparrow}+n_{i\downarrow})\\
 &=-t\sum_{\langle ij\rangle}(c^{\dagger}_{i\sigma}c_{j\sigma}+c^{\dagger}_{j\sigma}c_{i\sigma}) -\mu' \sum_{i\sigma} n_{i\sigma} + \sum_i -\frac{U}{6}(\hat{\sigma}_i)^2 \\
