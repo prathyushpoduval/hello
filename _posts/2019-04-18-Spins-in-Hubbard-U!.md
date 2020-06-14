@@ -187,9 +187,9 @@ $\vec{M}(q)=\vec{M_0}+ \vec{\eta}(q)$ where $\vec{M}\_0$ is the MF
 solution and $\vec{\eta}(q)$ are the fluctuations. Suppose this modifies
 the inverse green's function to
 
-$$\begin{aligned}-G^{-1}' = -G^{-1} -\mathcal{K}_x\eta_x(q)-\mathcal{K}_y\eta_y(q)\end{aligned}$$
+$$$\begin{aligned}-G^{-1}' = -G^{-1} -\mathcal{K}_x\eta_x(q)-\mathcal{K}_y\eta_y(q)\end{aligned}$$$
 
-where $-G^{-1}\'$ is the total inverse green's functions, $-G^{-1}$ is
+where $-G^{-1}'\$ is the total inverse green's functions, $-G^{-1}$ is
 the mean field inverse green's function and $\mathcal{K}\_i$ is the
 fluctuation in the inverse green's function in the $i$ direction. As a
 result, the change in the action is given by (Ignoring all first order
@@ -318,15 +318,15 @@ also have the following Taylor expansions:
 
 $$\begin{aligned}
     \epsilon' &= \epsilon +\frac{k\cdot q}{m}+\frac{q^2}{2m}\\
-    &\hphatom{(}\\
+    &\hphantom{(}\\
     E'&=\sqrt{\epsilon'^2+M^2}\\
       &=\sqrt{E^2+\frac{2k\cdot q}{m}\epsilon +\frac{q^2}{m}\epsilon+\frac{(k\cdot q)^2}{m^2}}\\
       &=E\left(1+\frac{k\cdot q}{m}\frac{\epsilon}{E^2}+\frac{q^2}{2m}\frac{\epsilon}{E^2}+\frac{(k\cdot q)^2}{2m^2}\frac{1}{E^2} -\frac{(k\cdot q)^2}{2m^2}\frac{\epsilon^2}{E^4}\right)\\
       &=E\left(1+\frac{k\cdot q}{m}\frac{\epsilon}{E^2}+\frac{q^2}{2m}\frac{\epsilon}{E^2}+\frac{(k\cdot q)^2}{2m^2}\frac{M^2}{E^4} \right)\\
-       &\hphatom{(}\\
+       &\hphantom{(}\\
 \frac{EE'+M^2+\epsilon\epsilon'}{EE'}&\approx \frac{2E^2+\frac{k\cdot q}{m}\epsilon+\frac{q^2}{2m}\epsilon+\frac{(k\cdot q)^2}{2m^2}\frac{M^2}{E^2}+\frac{k\cdot q}{m}\epsilon+\frac{q^2}{2m}\epsilon}{E^2\left(1+\frac{k\cdot q}{m}\frac{\epsilon}{E^2}+\frac{q^2}{2m}\frac{\epsilon}{E^2}+\frac{(k\cdot q)^2}{2m^2}\frac{M^2}{E^4} \right)}\\
 &\approx\frac{1}{E^2}\left(2E^2-\frac{k\cdot q}{m}\epsilon- \frac{(k\cdot q)^2}{2m^2}\frac{M^2}{E^2}  \right)\\
- &\hphatom{(}\\
+ &\hphantom{(}\\
 \frac{1}{\omega +E+E'}-\frac{1}{\omega -E-E'}&\approx \frac{1}{E+E'}\left( \frac{1}{1+\frac{\omega}{2E}}+\frac{1}{1-\frac{\omega}{2E}}\right)\\
 &\approx \frac{1}{E}\left(1-\frac{k\cdot q}{2m}\frac{\epsilon}{E^2}-\frac{q^2}{4m}\frac{\epsilon}{E^2}-\frac{(k\cdot q)^2}{4m^2}\frac{M^2}{E^4}+\frac{(k\cdot q)^2}{4m^2}\frac{\epsilon^2}{E^4}\right)\left(1+\frac{\omega^2}{4E^2}\right)\\
 &\approx \frac{1}{E}\left( 1-\frac{k\cdot q}{2m}\frac{\epsilon}{E^2}-\frac{q^2}{4m}\frac{\epsilon}{E^2}-\frac{(k\cdot q)^2}{4m^2}\frac{M^2-\epsilon^2}{E^4}+\frac{\omega^2}{4E^2}\right)\end{aligned}$$
