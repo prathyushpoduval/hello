@@ -2,7 +2,5 @@
 layout: home
 permalink: /
 hidden: true
-    
+title: "Hello There!
 ---
-# Hello Thcvere!
-My god what's happeneing!
