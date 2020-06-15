@@ -198,10 +198,11 @@ result, the change in the action is given by (Ignoring all first order
 contributions which add upto $0$) 
 
 $$\begin{aligned}
-    S&= -\text{Tr}\ln\left(-G^{-1}\\hphantom{}'\right) + \beta N\sum_q\frac{\vec{M}^2(q)}{2U}\\
+    S&= -\text{Tr}\ln\left(-G^{-1}\hphantom{}'\right) + \beta N\sum_q\frac{\vec{M}^2(q)}{2U}\\
     &=  -\text{Tr}\ln\left(-G^{-1} -\mathcal{K}_x\eta_x(q)-\mathcal{K}_y\eta_y(q)\right) + \beta N\sum_q\frac{(\vec{M_0}+ \vec{\eta}(q))^2}{2U}\\
     &=  -\text{Tr}\ln\left(-G^{-1}\left(\mathbb{1} +G\mathcal{K}_x\eta_x+G\mathcal{K}_y\eta_y\right)\right) + \beta N\frac{\vec{M_0}^2}{2U} +\beta N\sum_{q,r}\frac{\vec{\eta}_r(-q)\vec{\eta}_r(q)}{2U}\\
     &=  S_0 + \frac{1}{2}\sum_{q,a,b}\vec{\eta}_a(-q)\vec{\eta}_b(q) \left( \frac{\delta_{ab}}{U} + \text{Tr}G\mathcal{K}_aG\mathcal{K}_b \right) \end{aligned}$$
+    
 Thus, the coupling is given by $\frac{\delta_{ab}}{U} -\chi_{ab}(q)$
 where $\chi_{ab}(q) =- \text{Tr }G\mathcal{K}_aG\mathcal{K}_b$. The
 goldstone excitations are given by the roots of the determinant of the
