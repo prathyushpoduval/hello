@@ -1,0 +1,29 @@
+/* ==========================================================================
+   SINGLE PAGE/POST
+   ========================================================================== */
+
+
+
+
+
+
+.page {
+  @include breakpoint($large) {
+    width: calc(100% - #{$right-sidebar-width-narrow});
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
+  }
+
+.page__related {
+  @include breakpoint($large) {
+    width: calc(100% - #{$right-sidebar-width-narrow});
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
+  }
+
+}
+
