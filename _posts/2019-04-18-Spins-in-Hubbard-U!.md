@@ -189,16 +189,16 @@ $\vec{M}(q)=\vec{M_0}+ \vec{\eta}(q)$ where $\vec{M}\_0$ is the MF
 solution and $\vec{\eta}(q)$ are the fluctuations. Suppose this modifies
 the inverse green's function to
 
-$$\begin{aligned}-G^{-1}\hphanton{}' = -G^{-1} -\mathcal{K}_x\eta_x(q)-\mathcal{K}_y\eta_y(q)\end{aligned}$$
+$$\begin{aligned}-G^{-1}\hphantom{}' = -G^{-1} -\mathcal{K}_x\eta_x(q)-\mathcal{K}_y\eta_y(q)\end{aligned}$$
 
-where $-G^{-1}\text{'}$ is the total inverse green's functions, $-G^{-1}$ is
+where $-G^{-1}\hphantom{}'$ is the total inverse green's functions, $-G^{-1}$ is
 the mean field inverse green's function and $\mathcal{K}\_i$ is the
 fluctuation in the inverse green's function in the $i$ direction. As a
 result, the change in the action is given by (Ignoring all first order
 contributions which add upto $0$) 
 
 $$\begin{aligned}
-    S&= -\text{Tr}\ln\left(-G^{-1}\text{'}\right) + \beta N\sum_q\frac{\vec{M}^2(q)}{2U}\\
+    S&= -\text{Tr}\ln\left(-G^{-1}\\hphantom{}'\right) + \beta N\sum_q\frac{\vec{M}^2(q)}{2U}\\
     &=  -\text{Tr}\ln\left(-G^{-1} -\mathcal{K}_x\eta_x(q)-\mathcal{K}_y\eta_y(q)\right) + \beta N\sum_q\frac{(\vec{M_0}+ \vec{\eta}(q))^2}{2U}\\
     &=  -\text{Tr}\ln\left(-G^{-1}\left(\mathbb{1} +G\mathcal{K}_x\eta_x+G\mathcal{K}_y\eta_y\right)\right) + \beta N\frac{\vec{M_0}^2}{2U} +\beta N\sum_{q,r}\frac{\vec{\eta}_r(-q)\vec{\eta}_r(q)}{2U}\\
     &=  S_0 + \frac{1}{2}\sum_{q,a,b}\vec{\eta}_a(-q)\vec{\eta}_b(q) \left( \frac{\delta_{ab}}{U} + \text{Tr}G\mathcal{K}_aG\mathcal{K}_b \right) \end{aligned}$$
