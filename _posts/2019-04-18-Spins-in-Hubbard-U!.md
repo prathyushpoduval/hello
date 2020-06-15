@@ -189,7 +189,7 @@ $\vec{M}(q)=\vec{M_0}+ \vec{\eta}(q)$ where $\vec{M}\_0$ is the MF
 solution and $\vec{\eta}(q)$ are the fluctuations. Suppose this modifies
 the inverse green's function to
 
-$$\begin{aligned}-G^{-1}\text{'} = -G^{-1} -\mathcal{K}_x\eta_x(q)-\mathcal{K}_y\eta_y(q)\end{aligned}$$
+$$\begin{aligned}-G^{-1} ' = -G^{-1} -\mathcal{K}_x\eta_x(q)-\mathcal{K}_y\eta_y(q)\end{aligned}$$
 
 where $-G^{-1}\text{'}$ is the total inverse green's functions, $-G^{-1}$ is
 the mean field inverse green's function and $\mathcal{K}\_i$ is the
@@ -254,7 +254,9 @@ $f_{k\uparrow}-f_{k+q\downarrow}\approx f_{k\uparrow}-f_{k\downarrow}$
 because of the gap between up spin and down spin energy, the difference
 of $q$ doesn't matter. The condition for stability is given by
 $\alpha>0$ and the FM phase is destroyed along the line of $\alpha=0$.
-Antiferromagnetic Fluctuation Here, the inverse green's function is
+
+# Antiferromagnetic Fluctuation 
+Here, the inverse green's function is
 given by 
 
 $$\begin{aligned}
