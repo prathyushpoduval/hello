@@ -180,9 +180,9 @@ mean field equations, I found that both FM and AFM cannot coexist. This
 would lead to the conclusion that the FM-AFM transition is a **first
 order** transition.
 
-![Figure 1]({{ site.url }}{{ site.baseurl }}/assets/images/hubbard-U/dos3D.png){#fig:my_labe}
+![Figure 1]({{ site.url }}{{ site.baseurl }}/assets/images/hubbard-U/dos3D.png){#fig:my_labe}Figure 1
 
-![Figure 2]({{ site.url }}{{ site.baseurl }}/assets/images/hubbard-U/phaseBound.png){#fig:my_labe}
+![Figure 2]({{ site.url }}{{ site.baseurl }}/assets/images/hubbard-U/phaseBound.png){#fig:my_labe}Figure 2
 
 # Fluctuations 
 The aim behind modelling fluctuations is to search for low
@@ -374,4 +374,4 @@ $f_+-f_-$) which makes $A$ more positive, and as a result
 $M_{transition}$ must decrease. Thus, we can draw an approximate phase
 diagram as done in figure $3$ below.
 
-![Figure 3]({{ site.url }}{{ site.baseurl }}/assets/images/hubbard-U/phaseBoundFinal.png){#fig:ApproxPhaseBoundary}
+![Figure 3]({{ site.url }}{{ site.baseurl }}/assets/images/hubbard-U/phaseBoundFinal.png)Figure 3
