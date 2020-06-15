@@ -9,7 +9,7 @@ categories:
 In this post, I'll discuss the main types of magnetic ordering that we can theoretically find in the strongly correlated Hubbard model. This was done as part of an assignment for the Quantum Statistical Field Theory couse (PH 340) at IISc. The last part, where I figure out the first order transition between the antiferromagnet and ferromagnet looks a bit sketchy, so take it with a grain of salt.
 
 # Setting The Stage
-HWe'll be hunting the Hubbard model to search for Ferromagnetic (FM) and Antiferromagnetic (AFM) phases. The Hubbard hamiltonian is given by
+We'll be hunting the Hubbard model to search for Ferromagnetic (FM) and Antiferromagnetic (AFM) phases. The Hubbard hamiltonian is given by
 
 $$H=-t\sum_{\langle ij\rangle}(c^{\dagger}_{i\sigma}c_{j\sigma}+c^{\dagger}_{j\sigma}c_{i\sigma}) -\mu \sum_{i\sigma} n_{i\sigma} +U \sum_i n_{i\uparrow}n_{i\downarrow}$$
 
